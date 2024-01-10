@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
+
+PROJECT(leet-upLevel VERSION 0.1 LANGUAGES CXX C)
+
+SET(CMAKE_CXX_STANDARD 17)
+
+add_executable(uplevel src/proj.cpp)
