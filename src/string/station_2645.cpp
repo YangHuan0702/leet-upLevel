@@ -34,6 +34,10 @@ word 仅由字母 "a"、"b" 和 "c" 组成。
 class Solution {
 public:
     int addMinimum(string word) {
-
+        int ans = word[0] + 2 - word.back();
+        for (int i = 1; i < word.length(); i++) {
+            ans += (word[i] + 2 - word[i - 1]) % 3;
+        }
+        return ans;
     }
 };
